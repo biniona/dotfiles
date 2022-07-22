@@ -12,6 +12,9 @@ else
    export EDITOR='mvim'
 fi
 
+# add aliases
+source .aliases
+
 # add secrets to environment
 source .sensitive
 
