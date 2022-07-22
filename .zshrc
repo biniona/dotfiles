@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/alek.binion/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -19,13 +19,13 @@ source .aliases
 source .sensitive
 
 # load functions
-for FILE in /Users/alek.binion/functions/*; do source $FILE; done
+for FILE in $HOME/functions/*; do source $FILE; done
 
-if [ ! -S /Users/alek.binion/.ssh/ssh_auth_sock ]; then
+if [ ! -S $HOME/.ssh/ssh_auth_sock ]; then
   eval `ssh-agent`
-  ln -sf "$SSH_AUTH_SOCK" /Users/alek.binion/.ssh/ssh_auth_sock
+  ln -sf "$SSH_AUTH_SOCK" $HOME/.ssh/ssh_auth_sock
 fi
-export SSH_AUTH_SOCK=/Users/alek.binion/.ssh/ssh_auth_sock
+export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
 export JAVA_HOME=$(/usr/libexec/java_home)
