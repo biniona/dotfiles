@@ -5,3 +5,6 @@ alias cs='cd ~/code_snippets'
 alias tn='tmux new'
 alias feedback="mongosh \"$FEEDBACK_URI\""
 alias dochub="mongosh \"$DOCHUB_URI\""
+
+# dotfile management specific alias
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
