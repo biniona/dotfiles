@@ -1,0 +1,7 @@
+alias empty_commit='git commit --allow-empty -m "Trigger Build"'
+alias p='cd ~/projects'
+alias c='clear'
+alias cs='cd ~/code_snippets'
+alias tn='tmux new'
+alias feedback="mongosh \"$FEEDBACK_URI\""
+alias dochub="mongosh \"$DOCHUB_URI\""

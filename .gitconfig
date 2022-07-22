@@ -1,0 +1,19 @@
+[user]
+	name = Aleksander Binion
+	email = alek.binion@mongodb.com
+[core]
+	excludesfile = /Users/alek.binion/.gitignore_global
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit --date=relative --name-status%
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/alek.binion/.stCommitMsg
