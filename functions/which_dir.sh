@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function which_dir
 {
     exe=$1

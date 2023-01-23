@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # find_ipd directory pattern
 # function to ignore permission denied errors in find commands 
 
