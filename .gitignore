@@ -2,6 +2,8 @@
 .cfg/**
 #ignore secrets
 .sensitive
+#ignore local configuration
+.local_config
 
 # OS X Cruft
 .DS_Store
