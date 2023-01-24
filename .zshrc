@@ -1,7 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
 
 ZSH_THEME="robbyrussell"
 
@@ -18,6 +17,14 @@ source .aliases
 # add secrets to environment
 source .sensitive
 
+# add local configurations
+source .local_config
+
+# function used by functions directory, must be declared first
+function open_defualt_editor {
+    code "$@"
+}
+
 # load functions
 for FILE in $HOME/functions/*; do source $FILE; done
 
@@ -28,12 +35,11 @@ fi
 export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$PATH:/opt/apache-maven-3.6.3/bin
-
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
 #direnv setup
 eval "$(direnv hook zsh)"
+
+source $ZSH/oh-my-zsh.sh
