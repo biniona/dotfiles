@@ -8,7 +8,9 @@ function note {
     yesterday_pattern="^y.*$"
     days_ago_pattern="^[0-9]*$"
     get_date_pattern="^d[0-9]*$"
-    if [[ $1 =~ $yesterday_pattern ]]; then
+    if [[ -z "$1" ]]; then
+        :
+    elif [[ $1 =~ $yesterday_pattern ]]; then
         note_date="$yesterday";
     elif [[ $1 =~ $days_ago_pattern ]]; then
         note_date=$(gdate --date="$1 days ago" +"%Y%m%d")
