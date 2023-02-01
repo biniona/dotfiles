@@ -42,4 +42,6 @@ fi
 #direnv setup
 eval "$(direnv hook zsh)"
 
+source /Users/alek.binion/zsh-plugins/zsh-z/zsh-z.plugin.zsh
 source $ZSH/oh-my-zsh.sh
+
