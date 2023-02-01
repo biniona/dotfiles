@@ -1,8 +1,9 @@
 [user]
 	name = Aleksander Binion
-	email = alek.binion@mongodb.com
+	email = aleksander.binion@gmail.com
 [core]
 	excludesfile = /Users/alek.binion/.gitignore_global
+	editor = vim
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 
@@ -16,4 +17,4 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/alek.binion/.stCommitMsg
+	template = ~/.commitTemplate
