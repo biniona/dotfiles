@@ -14,5 +14,5 @@ https://news.ycombinator.com/item?id=11070797
 To install this environment with `curl` run, the following command:
 
 ```
-curl -Lks https://raw.githubusercontent.com/biniona-mongodb/dotfiles/main/cfg-install.sh | /bin/bash
+curl -Lks https://raw.githubusercontent.com/biniona/dotfiles/main/cfg-install.sh | /bin/bash
 ```
