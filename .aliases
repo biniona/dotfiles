@@ -1,9 +1,17 @@
+#!/bin/bash
+
 alias empty_commit='git commit --allow-empty -m "Trigger Build"'
 alias p='cd ~/projects'
 alias c='clear'
 alias cs='cd ~/code_snippets'
 alias tn='tmux new'
 alias h="cd ${HOME}"
+
+#git specific aliases
+
+# requires the "git open" npm package installed globally
+alias ggopen='git open origin master'
+alias ggpulls='git open origin master --suffix pulls'
 
 # dotfile management specific alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
