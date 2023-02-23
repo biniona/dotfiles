@@ -20,6 +20,9 @@ source .sensitive
 # add local configurations
 source .local_config
 
+# add vscode to path
+PATH="$PATH:/usr/local/bin/code"
+
 # function used by functions directory, must be declared first
 function open_defualt_editor {
     code "$@"
