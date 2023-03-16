@@ -1,16 +1,17 @@
 {
     "editor.inlineSuggest.enabled": true,
     "cSpell.userWords": [
+        "datetime",
         "Transcreation"
     ],
     "[python]": {
         "editor.formatOnType": true
     },
-    "window.zoomLevel": 3,
     "editor.bracketPairColorization.enabled": true,
     "editor.language.brackets": [],
     "editor.codeLens": true,
     "typescript.implementationsCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
-    "typescript.referencesCodeLens.enabled": true
+    "typescript.referencesCodeLens.enabled": true,
+    "window.zoomLevel": 3
 }
