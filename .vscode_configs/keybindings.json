@@ -31,7 +31,27 @@
         "command": "toggleVim"
     },
     {
+        "key": "ctrl+shift+alt+cmd+g",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
         "key": "ctrl+shift+alt+cmd+t",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+5",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
     },
@@ -41,13 +61,13 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "ctrl+shift+alt+cmd+g",
-        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
+        "key": "ctrl+shift+alt+cmd+b",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
     },
     {
         "key": "ctrl+shift+tab",
-        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
     }
 ]
