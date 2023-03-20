@@ -31,7 +31,7 @@
         "command": "toggleVim"
     },
     {
-        "key": "ctrl+shift+alt+cmd+g",
+        "key": "ctrl+shift+alt+cmd+t",
         "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
@@ -41,7 +41,7 @@
         "when": "inEditorsPicker && inQuickOpen"
     },
     {
-        "key": "ctrl+shift+alt+cmd+t",
+        "key": "ctrl+shift+alt+cmd+g",
         "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
