@@ -13,5 +13,6 @@
     "typescript.implementationsCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.referencesCodeLens.enabled": true,
-    "window.zoomLevel": 3
+    "window.zoomLevel": 2,
+    "gradle.showStoppedDaemons": true
 }

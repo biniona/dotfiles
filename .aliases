@@ -3,6 +3,7 @@
 alias empty_commit='git commit --allow-empty -m "Trigger Build"'
 alias p='cd ~/projects'
 alias c='clear'
+alias s='cd $HOME/study'
 alias cs='cd ~/code_snippets'
 alias tn='tmux new'
 alias h="cd ${HOME}"
