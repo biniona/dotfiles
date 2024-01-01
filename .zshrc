@@ -1,5 +1,9 @@
-# Path to your oh-my-zsh installation.
+#Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# this environment variable is used by
+# vscode for finding a zsh configuration
+export ZDOTDIR="$HOME"
 plugins=(git)
 
 ZSH_THEME="robbyrussell"
@@ -12,16 +16,23 @@ else
 fi
 
 # add aliases
-source .aliases
+source "$HOME/.aliases"
 
 # add secrets to environment
-source .sensitive
+source "$HOME/.sensitive"
 
 # add local configurations
-source .local_config
+source "$HOME/.local_config"
+
+# add autocompletions
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
 
 # add vscode to path
 PATH="$PATH:/usr/local/bin/code"
+
+#include pipx binaries on path
+PATH="$PATH:/Users/alek.binion/.local/bin"
 
 # function used by functions directory, must be declared first
 function open_defualt_editor {
@@ -48,3 +59,9 @@ eval "$(direnv hook zsh)"
 source /Users/alek.binion/zsh-plugins/zsh-z/zsh-z.plugin.zsh
 source $ZSH/oh-my-zsh.sh
 
+#asdf setup
+. "$HOME/.asdf/asdf.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
