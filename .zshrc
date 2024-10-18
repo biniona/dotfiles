@@ -21,6 +21,9 @@ source "$HOME/.aliases"
 # add secrets to environment
 source "$HOME/.sensitive"
 
+# adds directories I normally use if they don't already exist
+source "$HOME/.make_my_dirs"
+
 # add local configurations
 source "$HOME/.local_config"
 
