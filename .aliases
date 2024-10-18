@@ -9,11 +9,12 @@ alias tn='tmux new'
 alias h="cd ${HOME}"
 
 #git specific aliases
-
-# requires the "git open" npm package installed globally
-alias ggopen='git open origin master'
-alias ggpulls='git open origin master --suffix pulls'
+alias ggopen='gh repo view --web'
+alias ggpulls='gh pr view --web'
 
 # dotfile management specific alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ccpush='config push origin main'
+
+# productivity
+alias gcal='open -n -a "Google Chrome" --args "https://calendar.google.com/calendar/"'
