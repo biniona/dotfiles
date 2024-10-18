@@ -32,7 +32,7 @@ autoload -Uz compinit && compinit
 PATH="$PATH:/usr/local/bin/code"
 
 #include pipx binaries on path
-PATH="$PATH:/Users/alek.binion/.local/bin"
+PATH="$PATH:$HOME/.local/bin"
 
 # function used by functions directory, must be declared first
 function open_defualt_editor {
@@ -56,7 +56,7 @@ fi
 #direnv setup
 eval "$(direnv hook zsh)"
 
-source /Users/alek.binion/zsh-plugins/zsh-z/zsh-z.plugin.zsh
+source $HOME/zsh-plugins/zsh-z/zsh-z.plugin.zsh
 source $ZSH/oh-my-zsh.sh
 
 #asdf setup
