@@ -18,3 +18,4 @@ alias ccpush='config push origin main'
 
 # productivity
 alias gcal='open -n -a "Google Chrome" --args "https://calendar.google.com/calendar/"'
+alias pomo='termdown 25m && echo "pomdoro over"'
