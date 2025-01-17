@@ -1,2 +1,2 @@
-mkdir -p code_snippets
-mkdir -p projects
+mkdir -p ~/code_snippets
+mkdir -p ~/projects
