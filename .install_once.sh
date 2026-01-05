@@ -6,5 +6,5 @@ brew install direnv
 brew install gh
 
 # install python tools
-python3 -m pip install pipx
+brew install pipx
 pipx install termdown
