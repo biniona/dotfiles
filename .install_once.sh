@@ -4,6 +4,7 @@
 brew install tmux
 brew install direnv
 brew install gh
+brew install coreutils # install for gdate
 
 # install python tools
 brew install pipx
